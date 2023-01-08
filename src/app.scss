@@ -1,0 +1,6 @@
+/** Global CSS */
+@import 'styles/tokens/_font-family.scss';
+
+body {
+  font-family: $font-family-base;
+}
