@@ -1,0 +1,105 @@
+@import "../mixins/generate-hero.mixin";
+
+.hero {
+  background: rgb(9, 21, 35);
+  background: linear-gradient(
+    180deg,
+    rgba(9, 21, 35, 1) 0%,
+    rgba(14, 37, 63, 1) 100%
+  );
+
+  &__wrapper {
+    @include generateHero(".hero", "dark");
+
+    @media screen and (max-width: 992px) {
+      padding-top: 120px;
+      text-align: center;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    @media screen and (max-width: 992px) {
+      justify-content: center;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    max-width: 490px;
+  }
+}
+
+.about {
+  background-color: $color-neutral-white;
+  color: $color-neutral-dark;
+  @include generateHero(".about", "light");
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.contact-us {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background: linear-gradient(
+      to right,
+      rgba(9, 21, 35, 0) 0%,
+      rgba(14, 37, 63, 0.6) 100%
+    ),
+    url("/wp-content/themes/wordpress-theme/assets/images/Phone.jpg");
+  background: image-set(
+    linear-gradient(
+      to right,
+      rgba(9, 21, 35, 0) 0%,
+      rgba(14, 37, 63, 0.6) 100%
+    ),
+    url("/wp-content/themes/wordpress-theme/assets/images/Phone.webp") 1x
+  );
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 570px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__actions {
+    display: flex;
+  }
+
+  .typography {
+    &--small,
+    &--big,
+    &--paragraph {
+      margin-bottom: 12px;
+    }
+
+    &--small {
+      color: $color-primary-light-green;
+    }
+
+    &--big {
+      color: $color-neutral-white;
+    }
+
+    &--paragraph {
+      color: $color-neutral-white;
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1488px) {
+  .hero,
+  .about,
+  .contact-us {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

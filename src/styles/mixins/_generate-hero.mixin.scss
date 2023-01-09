@@ -1,0 +1,76 @@
+/// @content [Description] Generates a hero
+/// @param {type} $className Name of the main class who will receive the styling.
+/// @param {type} $theme Declares if hero is `dark` or `light`
+/// IMPORTANT: Should wrap image to .{className}__image and text to .{className}__text on HTML
+
+@mixin generateHero($className, $theme) {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  max-width: 1440px;
+  margin: 0 auto;
+  gap: 36px;
+  height: 100%;
+
+  #{$className}__image {
+    img {
+      width: 100%;
+    }
+  }
+
+  #{$className}__text,
+  #{$className}__image {
+    grid-column: span 6 / span 6;
+    place-self: center;
+  }
+
+  .typography {
+    &--small {
+      margin-bottom: 14px;
+    }
+
+    &--big,
+    &--paragraph {
+      margin-bottom: 28px;
+    }
+
+    &--paragraph {
+      font-size: 20px;
+    }
+  }
+
+  @if $theme == "light" {
+    .typography {
+      &--small {
+        color: $color-primary-light-blue;
+      }
+    }
+  }
+
+  @if $theme == "dark" {
+    .typography {
+      &--small {
+        color: $color-primary-light-green;
+      }
+
+      &--big {
+        color: $color-neutral-white;
+      }
+
+      &--paragraph {
+        color: $color-neutral-white;
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+
+    #{$className}__text,
+    #{$className}__image {
+      grid-column: span 12 / span 12;
+      width: 100%;
+    }
+  }
+}

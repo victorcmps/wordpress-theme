@@ -1,0 +1,42 @@
+.nav-menu {
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 56px;
+    position: absolute;
+    width: 100%;
+
+    &-button {
+      background-color: transparent;
+      border: 0;
+
+      &--close {
+        place-self: flex-end;
+      }
+    }
+
+    &-items {
+      background-color: $color-neutral-dark;
+      flex-direction: column;
+      padding: $spacing-md;
+      border: 0;
+      display: none;
+      position: absolute;
+      right: 28px;
+
+      ul li {
+        list-style-type: none;
+        padding: 8px;
+        a {
+          color: $color-neutral-white;
+          text-decoration: none;
+          font-weight: 700;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1180px) {
+      padding: 24px;
+    }
+  }
+}

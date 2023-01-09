@@ -1,6 +1,11 @@
-/** Global CSS */
-@import 'styles/tokens/_font-family.scss';
+@import "styles/reset";
+@import "styles/tokens";
+@import "styles/typography";
+@import "styles/components";
+@import "styles/pages";
 
+/** Global CSS */
+*,
 body {
   font-family: $font-family-base;
 }

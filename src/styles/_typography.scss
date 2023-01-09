@@ -1,0 +1,24 @@
+.typography {
+  &--small {
+    font-family: $font-family-alternative;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &--big {
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 74px;
+  }
+
+  &--paragraph {
+    line-height: 34px;
+  }
+
+  @media screen and (max-width: 1180px) {
+    &--big {
+      font-size: 34px;
+      line-height: 44px;
+    }
+  }
+}
