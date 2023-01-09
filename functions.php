@@ -1,5 +1,7 @@
 <?php
 
+include "inc/nav-menu.php";
+
 function scripts()
 {
     wp_register_style(
