@@ -9,3 +9,10 @@
 body {
   font-family: $font-family-base;
 }
+
+.container {
+  @media screen and (max-width: 1180px) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

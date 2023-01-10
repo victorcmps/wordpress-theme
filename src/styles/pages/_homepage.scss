@@ -14,10 +14,6 @@
   &__wrapper {
     @include generateHero(".hero", "dark");
     max-width: 1200px;
-    @media screen and (max-width: 992px) {
-      padding-top: 120px;
-      text-align: center;
-    }
   }
 
   &__actions {
@@ -31,11 +27,25 @@
   }
 
   &__text {
-    font-size: 20px;
     max-width: 490px;
     margin-right: 42px;
 
-    @media screen and (max-width: 992px) {
+    .typography {
+      &--paragraph {
+        margin-bottom: 52px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    margin-right: 0;
+
+    &__wrapper {
+      padding-top: 120px;
+      text-align: center;
+    }
+
+    &__text {
       margin-right: 0;
     }
   }
@@ -72,15 +82,21 @@
   }
 
   &__text {
-    margin-left: 42px;
+    margin: 0 42px;
     width: 505px;
+  }
+
+  @media screen and (max-width: 1180px) {
+    &__text {
+      width: unset;
+    }
   }
 
   @media screen and (max-width: 992px) {
     height: 100%;
 
     &__text {
-      margin-left: 0;
+      margin: 0;
       width: 100%;
     }
 
@@ -88,25 +104,23 @@
       margin-bottom: 0;
     }
   }
-
 }
 
 /** Contact Us Section **/
 .contact-us {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
   padding-top: 4rem;
   padding-bottom: 4rem;
   background: linear-gradient(
       to right,
       rgba(9, 21, 35, 0) 0%,
-      rgba(14, 37, 63, 0.6) 100%
+      rgb(37 53 70 / 60%) 100%
     ),
     url("/wp-content/themes/wordpress-theme/assets/images/Phone.jpg");
   background: image-set(
-    linear-gradient(
-      to right,
-      rgba(9, 21, 35, 0) 0%,
-      rgba(14, 37, 63, 0.6) 100%
-    ),
+    linear-gradient(to right, rgba(9, 21, 35, 0) 0%, rgb(37 53 70 / 60%) 100%),
     url("/wp-content/themes/wordpress-theme/assets/images/Phone.webp") 1x
   );
 
@@ -121,36 +135,35 @@
   flex-direction: column;
 
   &__actions {
-    display: flex;
+    .button {
+      padding: 19px 36px;
+    }
   }
 
   .typography {
     &--small,
-    &--big,
-    &--paragraph {
-      margin-bottom: 12px;
+    &--large {
+      margin-bottom: 20px;
     }
 
     &--small {
       color: $color-primary-light-green;
     }
 
-    &--big {
+    &--large {
       color: $color-neutral-white;
     }
 
     &--paragraph {
       color: $color-neutral-white;
-      font-size: 20px;
+      width: 410px;
     }
   }
-}
-
-@media screen and (max-width: 1488px) {
-  .hero,
-  .about,
-  .contact-us {
-    padding-left: 24px;
-    padding-right: 24px;
+  @media screen and (max-width: 992px) {
+    .typography {
+      &--paragraph {
+        width: unset;
+      }
+    }
   }
 }

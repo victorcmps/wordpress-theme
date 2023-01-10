@@ -5,6 +5,12 @@
     font-weight: bold;
   }
 
+  &--large {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 56px;
+  }
+
   &--big {
     font-size: 64px;
     font-weight: bold;
@@ -12,14 +18,19 @@
   }
 
   &--paragraph {
+    font-size: 20px;
     line-height: 35px;
     letter-spacing: 0.09px;
   }
 
   @media screen and (max-width: 1180px) {
-    &--big {
+    &--big,
+    &--large {
       font-size: 34px;
       line-height: 44px;
+    }
+    &--paragraph {
+      font-size: 18px;
     }
   }
 }

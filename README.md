@@ -1,2 +1,3 @@
 # wordpress-theme
-Wordpress theme w/ Laravel Mix + Sass from scratch. 
+
+Wordpress theme w/ Laravel Mix + Sass from scratch.

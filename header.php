@@ -3,7 +3,9 @@
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="<?php echo get_bloginfo("description"); ?>">
+    <meta name="description" content="<?php echo get_bloginfo(
+        "description"
+    ); ?>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
@@ -16,7 +18,7 @@
 <body>
     <header class="nav-menu">
         <div class="nav-menu__menu">
-            <img width="171" height="40" alt="Company's logo image" class="nav-menu__logo" src="<?php echo get_bloginfo(
+            <img class="nav-menu__menu-logo" width="171" height="40" alt="Company's logo image" class="nav-menu__logo" src="<?php echo get_bloginfo(
                 "template_url"
             ); ?>/assets/icons/site_Logo.svg" />
                 <button id="nav-main-menu-button" class="nav-menu__menu-button" aria-label="Open menu">
