@@ -15,4 +15,9 @@ body {
     padding-left: 24px;
     padding-right: 24px;
   }
+
+  @media screen and (max-width: 480px) {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
