@@ -6,16 +6,9 @@
 @mixin generateHero($className, $theme) {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  max-width: 1440px;
+  max-width: 1400px;
   margin: 0 auto;
-  gap: 36px;
   height: 100%;
-
-  #{$className}__image {
-    img {
-      width: 100%;
-    }
-  }
 
   #{$className}__text,
   #{$className}__image {
@@ -27,12 +20,12 @@
     &--small {
       margin-bottom: 14px;
     }
-
-    &--big,
-    &--paragraph {
+    &--big {
       margin-bottom: 28px;
     }
-
+    &--paragraph {
+      margin-bottom: 52px;
+    }
     &--paragraph {
       font-size: 20px;
     }
@@ -66,6 +59,15 @@
     display: flex;
     flex-direction: column;
     grid-template-columns: none;
+
+    #{$className}__image {
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
 
     #{$className}__text,
     #{$className}__image {

@@ -8,11 +8,12 @@
   &--big {
     font-size: 64px;
     font-weight: bold;
-    line-height: 74px;
+    line-height: 72px;
   }
 
   &--paragraph {
-    line-height: 34px;
+    line-height: 35px;
+    letter-spacing: 0.09px;
   }
 
   @media screen and (max-width: 1180px) {

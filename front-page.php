@@ -17,7 +17,7 @@
                 <source srcset="<?php echo get_bloginfo(
                 "template_url"
             ); ?>/assets/images/Device_Ipad.webp" type="image/webp">
-                <img width="702" height="790" alt="A photo of an iPad device" src="<?php echo get_bloginfo(
+                <img alt="A photo of an iPad device" src="<?php echo get_bloginfo(
                 "template_url"
             ); ?>/assets/images/Device_Ipad.png"/>
             </picture>
@@ -25,16 +25,14 @@
     </div>
 </section>
 <section class="about">
-    <div class="about__image">
-        <picture>
-            <source srcset="<?php echo get_bloginfo(
-                "template_url"
-            ); ?>/assets/images/Device_Mobile.webp" type="image/webp">
-                <img width="619" height="596"  alt="A photo of an iPhone device showing HTML tags" src="<?php echo get_bloginfo(
-                "template_url"
-            ); ?>/assets/images/Device_Mobile.png"/>
-        </picture>
-    </div>
+    <picture class="about__image">
+        <source srcset="<?php echo get_bloginfo(
+            "template_url"
+        ); ?>/assets/images/Device_Mobile.webp" type="image/webp">
+            <img width="619" height="596"  alt="A photo of an iPhone device showing HTML tags" src="<?php echo get_bloginfo(
+            "template_url"
+        ); ?>/assets/images/Device_Mobile.png"/>
+    </picture>
     <div class="about__text">
         <p class="typography--small">Eyebrow</p>
         <h2 class="typography--big">Generating relevant & engaging content</h1>
