@@ -18,7 +18,7 @@
                     <source srcset="<?php echo get_bloginfo(
                         "template_url"
                     ); ?>/assets/images/Device_Ipad.webp" type="image/webp">
-                    <img alt="A photo of an iPad device" src="<?php echo get_bloginfo(
+                    <img width="742" height="931" alt="A photo of an iPad device" src="<?php echo get_bloginfo(
                         "template_url"
                     ); ?>/assets/images/Device_Ipad.png"/>
                 </picture>
