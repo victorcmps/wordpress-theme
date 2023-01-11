@@ -41,7 +41,7 @@
             <p class="typography--paragraph"> Nom diam phasellus vestibulum lorem sed. Massa enim nec dui nunc mattis enim. Quisque egestas diam in arcu cursus euismod quis viverra. Eget arcu dictum varius duis at consectur lorem donec massa.</p>
         </div>
     </section>
-<section class="container contact-us">
+<section class="container contact-us" style="background: linear-gradient(to right,rgba(9, 21, 35, 0) 0%, rgb(37 53 70 / 60%) 100%), url('<?php echo get_template_directory_uri(); ?>/assets/images/Phone.jpg');">
     <div class="contact-us__text">
         <p class="typography--small">Eyebrow</p>
         <h2 class="typography--large">Integrated tech</h1>
