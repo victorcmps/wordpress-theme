@@ -12,9 +12,10 @@ IMPORTANT: The menu is only rendered if you add some links to him.
 
 - Firstly, you need to create a WordPress environment to run this theme. You can get one very quickly using <a href="https://localwp.com/">Local WP.</a>
 - Clone this project inside the themes directory on WordPress (/wp-content/themes/)
+- Run `npm install` to install the dependencies. You can use pnpm or yarn too if you want to.
+- Run `npm run watch` to compile the Sass/bundle the Javascript from the theme. Every modification you make at Sass/Js files, it will build the files again.
 - Go to Appearance > Themes and activate the theme.
-
-In order to compile the Sass/Bundle the Javascript, you need to run `npm run watch`, so everytime a sass/js file changes, it build the files again.
+- You are ready to develop!
 
 # Production
 
