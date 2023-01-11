@@ -10,6 +10,10 @@ body {
   font-family: $font-family-base;
 }
 
+body {
+  background-color: $color-neutral-white;
+}
+
 .container {
   @media screen and (max-width: 1180px) {
     padding-left: 24px;
