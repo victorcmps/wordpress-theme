@@ -18,6 +18,6 @@ To build SASS/JS files to production, run the command `npm run prod`.
 
 To run prettier, run the command `npm run prettier`.
 
-# Prettier
+# ESLint
 
 To run ESLint, run the command `npm run eslint`.
