@@ -2,6 +2,12 @@
 
 Wordpress theme from scratch.
 
+This is a simple WordPress theme with a static front page.
+
+The menu, title and favicon are dynamic, you can edit on WordPress admin.
+
+IMPORTANT: The menu is only rendered if you add some links to him.
+
 # Development
 
 - Firstly, you need to create a WordPress environment to run this theme. You can get one very quickly using <a href="https://localwp.com/">Local WP.</a>
