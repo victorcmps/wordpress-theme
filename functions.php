@@ -2,6 +2,9 @@
 
 include "inc/nav-menu.php";
 
+/**
+* Registers the custom CSS and JavaScript for the theme
+*/
 function scripts()
 {
     wp_register_style(
@@ -12,7 +15,7 @@ function scripts()
         "all"
     );
     wp_enqueue_style("style");
-
+    
     wp_register_script(
         "app",
         get_template_directory_uri() . "/dist/js/app.js",

@@ -7,13 +7,17 @@ window.addEventListener("DOMContentLoaded", () => {
   );
   const menuItems = document.getElementById("nav-main-menu-items");
 
-  menuButton.addEventListener("click", () => {
-    menuItems.style.display = "flex";
-    menuButton.style.display = "none";
-  });
+  if (menuButton) {
+    menuButton.addEventListener("click", () => {
+      menuItems.style.display = "flex";
+      menuButton.style.display = "none";
+    });
+  }
 
-  menuButtonClose.addEventListener("click", () => {
-    menuItems.style.display = "none";
-    menuButton.style.display = "flex";
-  });
+  if (menuButtonClose) {
+    menuButtonClose.addEventListener("click", () => {
+      menuItems.style.display = "none";
+      menuButton.style.display = "flex";
+    });
+  }
 });
